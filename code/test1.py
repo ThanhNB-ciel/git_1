@@ -14,7 +14,7 @@ clickhouse_info = {
 client = Client(host=clickhouse_info['host'], user=clickhouse_info['user'],
                 password=clickhouse_info['password'], settings={'use_numpy': True})
 
-for i in range(1):
+for i in range(0):
     time = datetime.strftime(date(2022, 12, 1) + timedelta(i), "%Y%m%d")
     print(time)
     data = client.query_dataframe(f"""
