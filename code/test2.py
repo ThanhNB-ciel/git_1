@@ -359,5 +359,8 @@ class Student :
         print("Name : ",name, " Age: ",age)
     def __str__(self) :
         print('------')
-thanh = Student('Nguyen Thanh',25)
-print(thanh)
+thanh = Student()
+
+from pyspark import SparkSession
+
+
