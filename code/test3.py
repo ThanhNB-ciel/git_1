@@ -15,7 +15,7 @@ def plotly_wordcloud(text):
     color_list=[]
 
     for (word, freq), fontsize, position, orientation, color in wc.layout_:
-        word_list.append(word)
+        word_list.append(word)  
         freq_list.append(freq)
         fontsize_list.append(fontsize)
         position_list.append(position)
